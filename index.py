@@ -1,5 +1,6 @@
 import os
 import time
+import playsound
 import speech_recognition as sr
 from gtts import gTTS
 
@@ -22,4 +23,5 @@ def get_audio():
 			print('Exception: '+str(e))
 			
 speak('hello')
-get_audio()
+while True:
+	get_audio()
